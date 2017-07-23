@@ -89,6 +89,7 @@ function autoload() {
 	$files = array(
 		'CUSTOM/module.php',
 		'CMB2/init.php',
+		'Prueba/prueba.php',
 	//	'faq/module.php',
 	);
 
