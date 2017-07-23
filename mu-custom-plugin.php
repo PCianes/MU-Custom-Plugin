@@ -9,7 +9,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: 	MU Custom plugin
- * Plugin URI:  	https://github.com/PCianes/MU-Custom-plugin
+ * Plugin URI:  	https://github.com/PCianes/MU-Custom-Plugin 
  * Description: 	MU Custom plugin is a WordPress Plugin for development.
  * Version:     	1.0.0
  * Author:      	Pablo Cianes
@@ -87,7 +87,8 @@ function enqueue_assets() {
 function autoload() {
 
 	$files = array(
-		'custom/module.php',
+		'CUSTOM/module.php',
+		'CMB2/init.php',
 	//	'faq/module.php',
 	);
 
