@@ -90,6 +90,7 @@ function autoload() {
 		'CMB2/init.php',
 		'Prueba/prueba.php',
 		'COLLAPSIBLE/module.php',
+		'LIBRO/module.php',
 	//	'faq/module.php',
 	);
 
