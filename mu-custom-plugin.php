@@ -56,7 +56,7 @@ define( 'MU_CUSTOM_URL', $plugin_url );
 define( 'MU_CUSTOM_TEXT_DOMAIN', 'mu-custom' );
 
 
-//add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 
 /**
  * Enqueue the plugin assets (scripts and styles)
@@ -69,12 +69,11 @@ function enqueue_assets() {
 	wp_enqueue_style('dashicons');
 	wp_enqueue_script(
 		'mu-custom-plugin-script', 
-		COLLAPSIBLE_CONTENT_URL . 'assets/js/jquery.project.min.js',
+		MU_CUSTOM_URL . 'assets/js/jquery.collapsible.min.js',
 		array('jquery'),
 		'1.0.0',
 		true
 	);
-
 }
 
 /**
@@ -90,6 +89,7 @@ function autoload() {
 		'CUSTOM/module.php',
 		'CMB2/init.php',
 		'Prueba/prueba.php',
+		'COLLAPSIBLE/module.php',
 	//	'faq/module.php',
 	);
 
